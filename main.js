@@ -18,9 +18,30 @@ right.addEventListener("mouseleave", function() {
   container.classList.remove("hover-right");
 });
 
-var list = $('h1 , button')
-$(document).ready(function () {
-$('body').html()
-$('.champ1').show() ;
 
-        });
+$('.champ1').hide() ;
+$('.champ2').hide() ;
+ $('h1').hide();
+ $('a').hide();
+
+// $( '#bt1' ).click(function() {
+//  $('h1').hide();
+//  $('a').hide();
+//  $('.champ1').show() ;
+
+// });
+
+
+// $( '#bt2' ).click(function() {
+//  $('h1').hide();
+//  $('a').hide();
+//  $('.champ2').show() ;
+
+// });
+
+// $('.champ1').hide() ;
+// $('.button1').on('click', function(){
+// 	$('.button1').hide();
+// 	$('h1').hide();
+// 	$('.champ1').show();
+// })
