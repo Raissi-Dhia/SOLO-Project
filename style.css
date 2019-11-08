@@ -202,3 +202,30 @@ display: block;
   position:absolute
 
 }
+ul {
+font-size: 1rem;
+  color: #fff;
+  position: relative;
+  left: 60%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  justify-content: center ;
+}
+.day {
+  color : red;
+  padding : 10px;
+  font-weight: bold ;
+}
+h2 {
+   font-size: 2rem;
+  color: #fff;
+  position: relative;
+  left: 95%;
+ 
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+#diet {
+  color : black;
+}
