@@ -1,3 +1,4 @@
+$(document).ready(function(){
 const left = document.querySelector(".left");
 const right = document.querySelector(".right");
 const container = document.querySelector(".container");
@@ -21,23 +22,23 @@ right.addEventListener("mouseleave", function() {
 
 $('.champ1').hide() ;
 $('.champ2').hide() ;
- $('h1').hide();
- $('a').hide();
+ // $('h1').hide();
+ // $('a').hide();
 
-// $( '#bt1' ).click(function() {
-//  $('h1').hide();
-//  $('a').hide();
-//  $('.champ1').show() ;
+$( '#bt1' ).click(function() {
+ $('h1').remove();
+ $('a').remove();
+ $('.champ1').show() ;
 
-// });
+});
 
 
-// $( '#bt2' ).click(function() {
-//  $('h1').hide();
-//  $('a').hide();
-//  $('.champ2').show() ;
+$( '#bt2' ).click(function() {
+ $('h1').remove();
+ $('a').remove();
+ $('.champ2').show() ;
 
-// });
+});
 
 // $('.champ1').hide() ;
 // $('.button1').on('click', function(){
@@ -45,3 +46,21 @@ $('.champ2').hide() ;
 // 	$('h1').hide();
 // 	$('.champ1').show();
 // })
+var weight = $('#weight').val();
+var height = $('#height').val();
+var fullName = $('#fullName').val();
+function calcul(weight, height){
+	return weight / (Math.pow(height, 2))
+}
+$("#input-left").click(function(){
+	if (weight === ''){
+		 return alert('Make Sure You Fill The Blanks !!')
+	}else if(height === ''){
+		return alert('Make Sure You Fill The Blanks !!')
+	}else if(fullName === ''){
+		return alert('Make Sure You Fill The Blanks !!')
+	}else
+	return alert('yo yo ')
+	
+})
+})
