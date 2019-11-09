@@ -1,3 +1,4 @@
+/*declaring some variables that we are going to use next */
 :root {
   --container-bg-color: #333;
   --left-bg-color: rgba(223, 39, 39, 0.7);
@@ -9,6 +10,7 @@
   --speed: 1000ms;
 }
 
+/*styling the html and body tags*/
 html, body {
   padding:0;
   margin:0;
@@ -18,6 +20,7 @@ html, body {
   overflow-x: hidden;
 }
 
+/*styling the titles with the tags h1 to make it responsive to the page and it doesnt split */
 h1 {
   font-size: 4rem;
   color: #fff;
@@ -29,6 +32,7 @@ h1 {
   
 }
 
+/* styling the button */
 .button {
   display: block;
   position: absolute;
@@ -48,16 +52,19 @@ h1 {
 
 }
 
+/*when hovering over the button from the lfet side */
 .split.left .button:hover {
   background-color: var(--left-button-hover-color);
   border-color: var(--left-button-hover-color);
 }
 
+/*when hovering over the button from the right side */
 .split.right .button:hover {
   background-color: var(--right-button-hover-color);
   border-color: var(--right-button-hover-color);
 }
 
+/*styling the container that contains almost what the body contains */
 .container {
   position: relative;
   width: 100%;
@@ -65,18 +72,20 @@ h1 {
   background: var(--container-bg-color);
 }
 
+/*the split .. it helps us get the layout of the page divided on two */
 .split {
   position: absolute;
   width: 50%;
   height: 100%;
   overflow: hidden;
 }
-
+/*setting styles to left side */
 .split.left {
   left:0;
   background: url('https://www.mau.co.ke/wp-content/uploads/2019/02/weight-loss.jpg') center center no-repeat;
   background-size: cover;
 }
+
 
 .split.left:before {
   position:absolute;
@@ -228,4 +237,12 @@ h2 {
 }
 #diet {
   color : black;
+}
+#meme {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height :105%;
 }

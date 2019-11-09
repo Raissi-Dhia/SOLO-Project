@@ -24,6 +24,10 @@ $('.champ1').hide() ;
 $('.champ2').hide() ;
 $('.EX1').hide() ;
 $('.EX2').hide() ;
+$('.EX11').hide() ;
+$('.EX22').hide() ;
+$('#meme').hide();
+
  // $('h1').hide();
  // $('a').hide();
 
@@ -56,6 +60,22 @@ function calcul(weight, height){
 }
 
 $("#input-right").click(function(){
+	// if ($('#weight').val() === ""){
+	// 	 alert('Make Sure You Fill The Blanks !!')
+	// }else if($('#height').val() === ""){
+	// 	 alert('Make Sure You Fill The Blanks !!')
+	// }else if($('#fullName').val()=== ""){
+	// 	 alert('Make Sure You Fill The Blanks !!')
+	//  }else{
+	// return 
+	$('.champ2').remove();
+	$('.EX1').show() ;
+	$('.EX2').show();
+//}
+})
+
+
+$("#input-left").click(function(){
 	// if (weight === ''){
 	// 	 return alert('Make Sure You Fill The Blanks !!')
 	// }else if(height === ''){
@@ -64,8 +84,19 @@ $("#input-right").click(function(){
 	// 	return alert('Make Sure You Fill The Blanks !!')
 	// }else
 	// return alert('yo yo ')
-	$('.champ2').remove();
-	$('.EX1').show() ;
-	$('.EX2').show();
+	$('.champ1').remove();
+	$('.EX11').show() ;
+	$('.EX22').show();
 })
+
 })
+//var result = 0	
+//function calcul(weight , height){
+// result += weight / Math.pow(height , 2)
+// return result ; 
+// }
+
+// if (result > 50){
+	// $('.container').remove()
+ // 	$('#meme').show()
+// }
