@@ -52,22 +52,20 @@ $( '#bt2' ).click(function() {
 // 	$('h1').hide();
 // 	$('.champ1').show();
 // })
-var weight = $('#weight').val();
-var height = $('#height').val();
-var fullName = $('#fullName').val();
-function calcul(weight, height){
-	return weight / (Math.pow(height, 2))
-}
+
 
 $("#input-right").click(function(){
-	// if ($('#weight').val() === ""){
-	// 	 alert('Make Sure You Fill The Blanks !!')
-	// }else if($('#height').val() === ""){
-	// 	 alert('Make Sure You Fill The Blanks !!')
-	// }else if($('#fullName').val()=== ""){
-	// 	 alert('Make Sure You Fill The Blanks !!')
-	//  }else{
-	// return 
+// 	var $weight = $('#weight').val();
+// var $height = $('#height').val();
+// var $fullName = $('#fullName').val();
+// if($('#fullName').val()=== ""){
+// 		 alert('put your fullName!!')
+// 		 }else if ($('#weight').val() === ""){
+// 		 alert('put your weight !!')
+// 	}else if($('#height').val() === ""){
+// 		 alert('put your height !!')
+// 	 }else{
+	
 	$('.champ2').remove();
 	$('.EX1').show() ;
 	$('.EX2').show();
@@ -96,7 +94,24 @@ $("#input-left").click(function(){
 // return result ; 
 // }
 
+$('input-right').click(function(){
 // if (result > 50){
 	// $('.container').remove()
  // 	$('#meme').show()
 // }
+// $('.champ2').remove();
+// 	$('.EX1').show() ;
+// 	$('.EX2').show();
+
+})
+$("#input-left").click(function(){
+// if (result > 50){
+//$('.container').remove()
+//$('#meme').show()
+// }
+	$('.champ1').remove();
+	$('.EX11').show() ;
+	$('.EX22').show();
+})
+
+
